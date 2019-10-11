@@ -1,5 +1,5 @@
-# URI - PYTHON
-Este repositório reúne soluções dos exercícios do [URI Online Judge](https://www.urionlinejudge.com.br/) feitas na linguagem Python.
+# URI
+Este repositório reúne soluções dos exercícios do [URI Online Judge](https://www.urionlinejudge.com.br/) feitas em qualquer linguagem.
 
 ## Como contribuir:
 1. Faça um Fork do projeto
@@ -7,7 +7,7 @@ Este repositório reúne soluções dos exercícios do [URI Online Judge](https:
 3. No arquivo com a questão adicione um comentário com as entradas e saídas esperadas no exercício. Como:
 
 ```
-'''
+
     Entrada:  10
               9
     Saída: X = 19
@@ -19,7 +19,6 @@ Este repositório reúne soluções dos exercícios do [URI Online Judge](https:
     Entrada:  15
               -7
     Saída: X = 8
-'''
 ```
 4. Adicione o arquivo a pasta do nível adequado - Se não existir a pasta, crie de acordo com o padrão.
 5. Faça commit no seu repositório
