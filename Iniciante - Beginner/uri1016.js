@@ -11,15 +11,15 @@
 
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
-let distance = parseInt(lines.shift());
+let distancia = parseInt(lines.shift());
 
-let speedCarX = 60;
-let speedCarY = 90;
+let velocidadeCarroX = 60;
+let velocidadeCarroY = 90;
 
-//Gets the absolute value from the difference
-let speedDiff = Math.abs(speedCarX - speedCarY);
+//pegar a diferença entre os carros, como este valor poderia vir negativo, usa-se o valor absoluto
+let diferencaVelocidade = Math.abs(velocidadeCarroX - velocidadeCarroY);
 
-//Since the units are in hours, the division returns travel time in hours. Multiply by 60 to get it in seconds
-let travelTimeInSeconds = (distance/speedDiff) * 60;
+//como as unidades de tempo sao em hora, a divisao tambem é em hora. Para pegar os minutos, multiplica-se por 60
+let tempoEmMinutos = (distancia/diferencaVelocidade) * 60;
 
-console.log(`${travelTimeInSeconds} minutos`);
+console.log(`${tempoEmMinutos} minutos`);

@@ -29,14 +29,14 @@
 
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
-let inputValue = parseInt(lines.shift());
+let valorInput = parseInt(lines.shift());
 
-let bankNotesArr = [100, 50, 20, 10, 5, 2, 1];
+let notasDoReal = [100, 50, 20, 10, 5, 2, 1];
 
-console.log(inputValue);
+console.log(valorInput);
 
-for(let bankNote of bankNotesArr){
-    let billQuantity = parseInt(inputValue/bankNote);
-    inputValue = inputValue % bankNote;
-    console.log(`${billQuantity} nota(s) de R$ ${bankNote},00`);
+for(let notaDoReal of notasDoReal){
+    let quantidade = parseInt(valorInput/notaDoReal);
+    valorInput = valorInput % notaDoReal;
+    console.log(`${quantidade} nota(s) de R$ ${notaDoReal},00`);
 }

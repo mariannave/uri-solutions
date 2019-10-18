@@ -14,11 +14,11 @@
 
 var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
-let spentTime = parseInt(lines.shift());
-let averageSpeed = parseInt(lines.shift());
+let tempoGasto = parseInt(lines.shift());
+let velocidadeMedia = parseInt(lines.shift());
 
-let distance = spentTime * averageSpeed;
-let fuelEconomy = 12;
-let liters = distance/fuelEconomy;
+let distancia = tempoGasto * velocidadeMedia;
+let economiaCombustivel = 12;
+let litrosGastos = distancia/economiaCombustivel;
 
-console.log(liters.toFixed(3));
+console.log(litrosGastos.toFixed(3));
